@@ -24,7 +24,7 @@ function getUserInfo() {
         // headers:{Authorization:localStorage.getItem('token')||''},
         success(res) {
             if (res.status !== 0) return layer.msg('获取用户信息失败')
-            console.log(res);
+            // console.log(res);
             renderAvatar(res.data)
         },
         //无论成功还是失败都会调用这个函数
